@@ -1,0 +1,78 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+   
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+.carousel {
+    border: 10px solid white;
+    -webkit-transform: rotate(1deg);
+    -moz-transform: rotate(1deg);
+    -ms-transform: rotate(1deg);
+    -o-transform: rotate(1deg);
+    
+    -webkit-box-shadow: 10px 10px 20px #002424;
+    -moz-box-shadow: 10px 10px 20px #002424;
+    box-shadow: 10px 10px 20px #002424;
+   
+
+}
+
+.carousel .item {
+    max-height: 400px;
+    max-height: 1200px;
+}
+
+body h3 {
+    
+    font-family: Lobster two , Georgia , serif ;
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+    color:  #080808;
+    font-size: 1.9em;
+    height: 30px;
+}
+.thumbnail img{
+     -webkit-box-shadow: 10px 10px 20px #002424;
+    -moz-box-shadow: 10px 10px 20px #002424;
+    box-shadow: 10px 10px 20px #002424;
+}
+
+
+
+.thumbnail p {
+    
+    color: red;
+    padding-top: 10px;
+      
+}
+
+.tabbable .col-md-3 li  {
+    
+   font-family: 'Eater', cursive;
+   color: black;
+}
+
+.footer p {
+    alignment-adjust: central;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+

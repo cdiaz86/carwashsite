@@ -1,0 +1,135 @@
+<!DOCTYPE >
+<html lang="en"  ng-app='mycarApp'>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two|Droid+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="includes/css/bootstrap.min.css">        
+    <link rel="stylesheet" href="includes/css/bootstrap-theme.min.css">        
+    <link rel="stylesheet" href="includes/css/main.css">       
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!-- facebook Scrips-->
+<div id="fb-root"></div>
+<script>
+    (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        
+      <div class="container">
+        <div class="navbar-header">
+            <!-- Boton de deslisamiento de barra  -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RACE TEAM CAR WASH </a>
+        </div>
+        <div class="navbar-collapse collapse" >
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">
+                <span class="glyphicon glyphicon-home"></span>
+                Acerca de Nostros</a>
+            </li>
+            <li><a href="#/page/service">Servicios</a></li>
+            <li><a href="#/page/contact">Contactenos</a></li>
+          </ul>
+          <div class="fb-like pull-right" data-href="https://www.facebook.com/#!/Raceteamcarwash" 
+               data-layout="button" data-action="like" data-show-faces="true" 
+               data-share="true">               
+          </div>
+          </div>
+      </div>
+        </div>  
+        <br>
+        <!-- Carousel-->
+        
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/lavado1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: </p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+            <img   src="img/lavado2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Leer mas</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/lavado3.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio,</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Nuestra Galeria</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+    <!-- IMagenes de Productos -->     
+    <br><br><br>
+    <div class="container ">
+        <div ng-view></div>    
+      <hr>
+      <footer>
+          <p>  &copy; Av. La marina 1640 LT 20 (altura de IPAE) - San Miguel </p>
+      </footer>
+      
+    </div> <!-- /container --> 
+    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.js"><\/script>');</script>
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+         <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        
+        <script src="includes/scripts/jquery/jquery-1.10.1.js"></script>
+        <script src="includes/scripts/angular/angular.js"></script>
+        <script src="includes/scripts/angular/angular-route.js"></script>
+        <script src="includes/scripts/controller/controller.js"></script>           
+        </body>
+</html>
