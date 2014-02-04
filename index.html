@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="includes/css/main.css">       
     <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body>
+<body ng-controller="wrapperController">
 <!-- facebook Scrips-->
 <div id="fb-root"></div>
 <script>
@@ -45,12 +45,12 @@
         </div>
         <div class="navbar-collapse collapse" >
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">
-                <span class="glyphicon glyphicon-home"></span>
-                Acerca de Nostros</a>
-            </li>
-            <li><a href="#/page/service">Servicios</a></li>
-            <li><a href="#/page/contact">Contactenos</a></li>
+            <li ng-class="{active:activeMenu(tab)}"  ng-repeat="tab in nav" >
+                <a href="{{tab.link}}">
+                    <span class="{{tab.icon}}"></span>
+                    <span ng-bind="tab.name"></span>
+                </a>
+            </li>            
           </ul>
           <div class="fb-like pull-right" data-href="https://www.facebook.com/#!/Raceteamcarwash" 
                data-layout="button" data-action="like" data-show-faces="true" 
